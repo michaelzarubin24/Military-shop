@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "montagu";
+  src: url(.);
+}
+@font-face {
+  font-family: "montserrat";
+  src: url(.);
+}
+// PADDING
+$padding-xxxl: 128px;
+$padding-xxl: 60px;
+$padding-xl: 50px;
+$padding-l: 40px;
+$padding-m: 30px;
+$padding-s: 20px;
+$padding-xs: 10px;
+// MARGIN
+$margin-xxxl: 128px;
+$margin-xxl: 60px;
+$margin-xl: 50px;
+$margin-l: 40px;
+$margin-m: 30px;
+$margin-s: 20px;
+$margin-xs: 10px;
+// FONT-FACE
+$fs-xl: 70px;
+$fs-l: 42px;
+$fs-m: 20px;
+$fs-s: 18px;
+$fs-xs: 16px;
+// FONT-FAMILY
+$ff-montserrat: "montserrat";
+
+// COLOR
+$primary-text-color: rgba(255, 255, 255, 1);
+$secondary-text-color: rgba(217, 217, 217, 1);
+$text-secondary: #ececec;
+$text-primary: #576e75;
+$primary-bg: #101010;
+$secondary-bg: rgba(223, 223, 223, 1);
+$thrid-bg: rgba(56, 56, 56, 1);
+$bg-secondary: white;
+
+$transition-speed: 500ms;
+$transition-speed-low: 300ms;
