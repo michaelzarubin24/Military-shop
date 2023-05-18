@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Amazing Grotesk Ultra";
+  src: url(../public/fonts/AmazingGrotesk/Amazing\ Grotesk\ Ultra.otf);
+}
+
+@font-face {
+  font-family: "Aristotelica";
+  src: url(../public/fonts/Aristotelica/Aristotelica-Text-Thin-trial.ttf);
+}
+
+// PADDING
+$padding-xxxl: 128px;
+$padding-xxl: 60px;
+$padding-xl: 50px;
+$padding-l: 40px;
+$padding-m: 30px;
+$padding-s: 20px;
+$padding-xs: 10px;
+// MARGIN
+$margin-xxxl: 128px;
+$margin-xxl: 60px;
+$margin-xl: 50px;
+$margin-l: 40px;
+$margin-m: 30px;
+$margin-s: 20px;
+$margin-xs: 10px;
+// FONT-FACE
+$fs-xl: 75px;
+$fs-l: 45px;
+$fs-m: 18px;
+$fs-s: 14px;
+$fs-xs: 12px;
+$fs-xxs: 9px;
+
+// FONT-FAMILY
+$ff-primary: "Amazing Grotesk Ultra";
+$ff-secondary: "Aristotelica";
+
+// COLOR
+$primary-text-color: #ffffff;
+$secondary-text-color: #000000;
+$third-text-color: #c2b9b9;
+$forth-text-color: #5c7178;
+
+// BG
+$primary-bg: #5c7178;
+$secondary-bg: #d9d9d9;
+$thrid-bg: #ffffff;
+
+// TRANSITION
+$transition-speed: 500ms;
+$transition-speed-low: 300ms;
