@@ -14,3 +14,18 @@ a {
 #app {
   font-family: $ff-primary;
 }
+
+.header {
+  color: red;
+  font-size: 22px;
+  margin: 2rem 1rem;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    margin-left: 1rem;
+  }
+}
+
+
