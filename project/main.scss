@@ -1,4 +1,5 @@
 @import "./scss/variables.scss";
+@import "./scss/mixings.scss";
 
 * {
   padding: 0;
@@ -11,22 +12,48 @@ a {
   color: inherit;
 }
 
+#app {
+  font-family: $ff-primary;
+}
+
 // * main-page
 
 .header {
-  display: flex;
-  justify-content: center;
-  text-decoration: underline;
-  align-items: center;
-  color: rgb(26, 85, 19);
-  font-size: $fs-l;
-  margin-top: $margin-xxxl * 2.5;
-
-  &__nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @include d-flex(space-between, center, row);
+  background: $primary-bg;
+  &__title-wrapper {
+    @include d-flex(space-between, center, row);
+  }
+  &__title {
+    @include d-flex(space-between, center, column);
     font-size: $fs-l;
-    margin-top: $margin-m;
+    margin: $margin-s;
+    text-align: center;
+    margin-left: $margin-xl;
+  }
+  &__logo-wrapper {
+    margin: $margin-s;
+    margin-left: $margin-l;
+  }
+  &__logo {
+    width: 120px;
+    height: 111px;
+  }
+  &__nav {
+    @include d-flex(space-between, center, row);
+    font-size: $fs-m;
+    .nav-link {
+      @include d-flex(space-between, center, row);
+      margin: $margin-m;
+      color: $primary-text-color;
+      text-shadow: 2px 2px #000000;
+    }
+  }
+  &__search-wrapper {
+    margin-right: $margin-m;
+  }
+  &__search {
+    width: 28px;
+    height: 28px;
   }
 }
