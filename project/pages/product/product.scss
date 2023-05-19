@@ -55,6 +55,7 @@ a {
 
 .product-item {
   @include d-flex(center, center);
+  margin: $margin-xxl;
   &_box {
     width: 900px;
     border: 15px solid;
