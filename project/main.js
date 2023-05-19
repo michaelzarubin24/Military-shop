@@ -1,6 +1,6 @@
 import "./main.scss";
 
-// * Background
+// * Background--
 
 var colors = new Array(
     [62,35,255],
