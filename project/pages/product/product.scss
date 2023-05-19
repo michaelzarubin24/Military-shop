@@ -1,11 +1,16 @@
-.title {
-  color: blue;
+@import "../../scss/mixings.scss";
 
-  &__paragraph {
-    font-size: 5px;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 119px;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  @include d-flex(space-around, center);
 }
