@@ -1,2 +1,3 @@
-import "./main-page.scss";
+import "./main.scss";
+
 

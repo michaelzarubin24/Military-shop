@@ -1,8 +1,15 @@
+@import "../../scss/variables.scss";
+
+body {
+  background: gray;
+}
+
+
 .title {
     color: blue;
 
     &__paragraph {
-        font-size: 5px;
+        font-size: 15px;
     }
 
 
