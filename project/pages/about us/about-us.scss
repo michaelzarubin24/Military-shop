@@ -1,21 +1,21 @@
 @import "../../scss/variables.scss";
 
 body {
-  background: gray;
+  background: rgb(33, 31, 31);
 }
 
-
 .title {
-    color: blue;
+  color: $forth-text-color;
 
-    &__paragraph {
-        font-size: 15px;
-    }
-
-
+  &__paragraph {
+      font-size: $fs-xs;
   }
 
-  h1 {
-    font-size: 119px;
-  }
 
+}
+
+h1 {
+  font-size: $fs-xl;
+}
+
+  

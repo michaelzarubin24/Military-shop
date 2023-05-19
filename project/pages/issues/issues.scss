@@ -1,16 +1,19 @@
 @import "../../scss/variables.scss";
 
+
+
 .title {
-    color: $forth-text-color;
+  color: $forth-text-color;
 
-    &__paragraph {
-        font-size: $fs-xs;
-    }
-
-
+  &__paragraph {
+      font-size: $fs-xs;
   }
 
-  h1 {
-    font-size: $fs-xl;
-  }
+
+}
+
+h1 {
+  font-size: $fs-xl;
+}
+
 

@@ -1,19 +1,21 @@
 @import "../../scss/variables.scss";
+
 // * pages-product 
 
 .title {
-    color: $forth-text-color;
-  
-    &__paragraph {
-        font-size: $fs-xs;
-    }
-  
-  
+  color: $forth-text-color;
+
+  &__paragraph {
+      font-size: $fs-xs;
   }
-  
-  h1 {
-    font-size: $fs-xl;
-  }
+
+
+}
+
+h1 {
+  font-size: $fs-xl;
+}
+
 
  
 
