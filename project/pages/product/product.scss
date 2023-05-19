@@ -1,4 +1,5 @@
 @import "../../scss/mixings.scss";
+@import "../../scss/variables.scss";
 
 * {
   padding: 0;
@@ -11,6 +12,43 @@ a {
   color: inherit;
 }
 
-.title {
-  @include d-flex(space-around, center);
+.product {
+  @include d-flex(center, center, column);
+  & span {
+    width: 500px;
+    border: 0px solid;
+    padding: $padding-xs;
+    font-size: $fs-l;
+    font-family: $ff-primary;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $secondary-bg;
+    color: $forth-text-color;
+    margin: $margin-l;
+  }
+  &-container {
+    @include d-flex(space-around, center);
+    flex-wrap: wrap;
+    width: 750px;
+    height: 600px;
+    border: 15px solid;
+    border-style: ridge;
+    border-radius: 35px;
+  }
+  &-box {
+    @include d-flex(space-between, center, column);
+    text-align: center;
+    width: 150px;
+    height: 192px;
+    & img {
+      width: 150px;
+    }
+    & p {
+      font-weight: 900;
+    }
+    .text {
+      text-align: center;
+    }
+  }
 }
