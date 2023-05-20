@@ -57,3 +57,19 @@ a {
     height: 28px;
   }
 }
+
+.main {
+  &__product-card-wrapper {
+    @include grid-sys(1, 3);
+    gap: 5rem;
+
+    margin-left: $margin-xxl + 200px;
+    margin-top: $margin-xxl;
+  }
+
+  &__card {
+  }
+  &__card-img {
+    width: 200px;
+  }
+}

@@ -4,3 +4,9 @@
   align-items: $ai;
   flex-direction: $fd;
 }
+
+@mixin grid-sys($row-amount, $col-amount, $row-fr: 1fr, $col-fr: 1fr) {
+  display: grid;
+  grid-template-columns: repeat($col-amount, $col-fr);
+  grid-template-rows: repeat($row-amount, $row-fr);
+}
