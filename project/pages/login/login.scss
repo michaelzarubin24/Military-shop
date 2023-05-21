@@ -1,23 +1,118 @@
-@import "../../scss/variables.scss";
+@import '../../scss/variables.scss';
+@import '../../scss/mixings.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#app {
+  font-family: $ff-primary;
+}
 
 body {
   background: rgb(180, 185, 190);
 }
 
-
-.title {
-  color: $forth-text-color;
-
-  &__paragraph {
-      font-size: $fs-xs;
+.header {
+  @include d-flex(space-between, center, row);
+  background: $primary-bg;
+  &__title-wrapper {
+    @include d-flex(space-between, center, row);
   }
-
-
+  &__title {
+    @include d-flex(space-between, center, column);
+    font-size: $fs-l;
+    margin: $margin-s;
+    text-align: center;
+    margin-left: $margin-xl;
+  }
+  &__logo-wrapper {
+    margin: $margin-s;
+    margin-left: $margin-l;
+  }
+  &__logo {
+    width: 120px;
+    height: 111px;
+  }
+  &__nav {
+    @include d-flex(space-between, center, row);
+    font-size: $fs-m;
+    .nav-link {
+      @include d-flex(space-between, center, row);
+      margin: $margin-m;
+      color: $primary-text-color;
+      text-shadow: 2px 2px #000000;
+    }
+  }
+  &__search-wrapper {
+    margin-right: $margin-m;
+  }
+  &__search {
+    width: 28px;
+    height: 28px;
+  }
 }
 
-h1 {
-  font-size: $fs-xl;
+.login-container {
+  width: 300px;
+  position: relative;
+  top: 15rem;
+  margin: 0 auto;
+  padding: $padding-s;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
+.login__title {
+  text-align: center;
+}
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
 
+.input-group {
+  margin-bottom: $margin-xs;
+}
+
+.form__label-password {
+  display: block;
+  margin-bottom: $margin-xs - 5px;
+}
+
+.form__input[type='text'],
+.form__input-password[type='password'] {
+  padding: $padding-xs - 5px;
+  width: 100%;
+}
+
+.input__btn {
+  margin-top: $margin-s;
+  padding: $padding-xs;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input__btn:hover {
+  background-color: #45a049;
+}
+
+// .footer {
+//   @include d-flex(center, end);
+//   margin-top: $margin-xxl;
+//   background: $primary-bg;
+//   text-align: center;
+//   padding: $padding-s;
+//   border-radius: $br-footer;
+//   height: 5rem;
+// }
