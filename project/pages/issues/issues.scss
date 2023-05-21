@@ -14,7 +14,6 @@ a {
 
 #app {
   font-family: $ff-primary;
-  height: 73vh;
 }
 
 // * Issues-pages
@@ -63,7 +62,6 @@ a {
 
 .container {
   display: flex;
-  height: 100%;
 
   .sidebar {
     @include d-flex(start, center, column);
@@ -94,6 +92,40 @@ a {
         text-align: center;
         box-shadow: $box-shadow-s;
       }
+    }
+  }
+
+  .main {
+    width: 70%;
+    height: 73vh;
+    @include d-flex(center, center, column);
+
+    &__title {
+      @include d-flex(center, center);
+      margin-top: $margin-m;
+      text-transform: uppercase;
+      font-size: $fs-l;
+    }
+
+    &__description {
+      width: 90%;
+      padding: $padding-m $padding-s;
+    }
+
+    #main__description {
+      padding: $padding-m $padding-s; 
+      width: 90%; 
+      display: none; 
+    }
+  
+    #main__description .new { opacity: 0; }
+    #main__description .div_opacity {
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    opacity: 1;
     }
   }
 }
