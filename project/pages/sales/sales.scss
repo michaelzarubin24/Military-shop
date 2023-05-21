@@ -61,15 +61,60 @@ a {
 .main {
   &__product-card-wrapper {
     @include grid-sys(1, 3);
-    gap: 5rem;
-
-    margin-left: $margin-xxl + 200px;
     margin-top: $margin-xxl;
+    gap: 4rem;
+    border: 15px solid;
+    border-style: ridge;
+    border-radius: 35px;
   }
 
-  &__card {
+  &__product-card {
+    margin-left: $margin-xxxl;
+    line-height: 2rem;
   }
   &__card-img {
     width: 200px;
+    margin-top: $margin-m;
   }
+
+  &__product-description {
+    word-wrap: break-word;
+    width: 40%;
+  }
+
+  &__product-price {
+    text-decoration: line-through;
+  }
+
+  &__product-price-sales {
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+  }
+
+  &__product-btn {
+    position: relative;
+    left: 10rem;
+    top: -4rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: $primary-bg;
+    transition: 0.7s;
+    &:hover {
+      background-color: red;
+      transition: 0.8s;
+      transform: scale(1.2);
+      color: greenyellow;
+    }
+  }
+}
+
+.footer {
+  @include d-flex(center, center);
+  margin-top: $margin-xxl;
+  background: $primary-bg;
+  text-align: center;
+  padding: $padding-s;
+  border-radius: $br-footer;
 }

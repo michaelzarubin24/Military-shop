@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Amazing Grotesk Ultra";
-  src: url(../public/fonts/AmazingGrotesk/Amazing\ Grotesk\ Ultra.otf);
+  font-family: 'Amazing Grotesk Ultra';
+  src: url('..//public/fonts/AmazingGrotesk/Amazing\ Grotesk\ Ultra.otf');
 }
 
 @font-face {
-  font-family: "Aristotelica";
-  src: url(../public/fonts/Aristotelica/Aristotelica-Text-Thin-trial.ttf);
+  font-family: 'Aristotelica';
+  src: url('../public/fonts/Aristotelica/Aristotelica-Text-Thin-trial.ttf');
 }
 
 // PADDING
@@ -33,8 +33,8 @@ $fs-xs: 12px;
 $fs-xxs: 9px;
 
 // FONT-FAMILY
-$ff-primary: "Amazing Grotesk Ultra";
-$ff-secondary: "Aristotelica";
+$ff-primary: 'Amazing Grotesk Ultra';
+$ff-secondary: 'Aristotelica';
 
 // COLOR
 $primary-text-color: #ffffff;
@@ -51,4 +51,8 @@ $thrid-bg: #ffffff;
 $transition-speed: 500ms;
 $transition-speed-low: 300ms;
 
-
+// border radius
+$br-header: 0 0 1rem 1rem;
+$br-sidebar: 1rem;
+$br-footer: 1rem 1rem 0 0;
+$br-nav: 1rem;
