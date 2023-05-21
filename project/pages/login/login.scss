@@ -16,10 +16,6 @@ a {
   font-family: $ff-primary;
 }
 
-body {
-  background: rgb(180, 185, 190);
-}
-
 .header {
   @include d-flex(space-between, center, row);
   background: $primary-bg;
@@ -61,6 +57,8 @@ body {
 }
 
 .login-container {
+  background: rgb(180, 185, 190);
+
   width: 300px;
   position: relative;
   top: 15rem;
