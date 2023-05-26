@@ -13,6 +13,9 @@
         & img {
           width: 150px;
         }
+        .sub-photo {
+          display: flex;
+        }
         .photo {
           @include d-flex(center, center);
           width: 60px;
