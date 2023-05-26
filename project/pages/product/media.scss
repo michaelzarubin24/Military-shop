@@ -1,0 +1,53 @@
+@media (min-width: 320px) and (max-width: 576px) {
+  .product-item {
+    @include d-flex(center, center);
+    &_box {
+      font-family: $ff-primary;
+      width: 300px;
+      border: 10px solid;
+      border-style: ridge;
+
+      @include d-flex(center, center, column);
+      &-wrapper {
+        @include d-flex(center, center, column);
+        & img {
+          width: 150px;
+        }
+        .photo {
+          @include d-flex(center, center);
+          width: 60px;
+        }
+      }
+      &-information {
+        @include d-flex(center, center, column);
+      }
+      .title {
+        & span {
+          font-size: 20px;
+        }
+      }
+      .stock {
+        padding: $padding-l;
+        width: 300px;
+      }
+      .price {
+        padding: 0px;
+
+        & span {
+          font-size: 23px;
+          padding: $padding-xs;
+        }
+      }
+      .description {
+        width: 250px;
+        padding-top: $padding-m;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
