@@ -1,0 +1,148 @@
+@media (min-width: 320px) and (max-width: 576px) {
+  .product-item {
+    @include d-flex(center, center);
+    &_box {
+      font-family: $ff-primary;
+      width: 300px;
+      border: 10px solid;
+      border-style: ridge;
+
+      @include d-flex(center, center, column);
+      &-wrapper {
+        @include d-flex(center, center, column);
+        & img {
+          width: 150px;
+        }
+        .sub-photo {
+          display: flex;
+        }
+        .photo {
+          @include d-flex(center, center);
+          width: 60px;
+        }
+      }
+      &-information {
+        @include d-flex(center, center, column);
+      }
+      .title {
+        & span {
+          font-size: 20px;
+        }
+      }
+      .stock {
+        padding: $padding-l;
+        width: 300px;
+      }
+      .price {
+        padding: 0px;
+
+        & span {
+          font-size: 23px;
+          padding: $padding-xs;
+        }
+      }
+      .description {
+        width: 250px;
+        padding-top: $padding-m;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .product-item {
+    @include d-flex(center, center);
+    margin: $margin-xxl;
+    &_box {
+      font-family: $ff-primary;
+      width: 600px;
+      border: 10px solid;
+      border-style: ridge;
+      border-radius: 35px;
+      padding: $padding-xl;
+      @include d-flex(space-around, flex-start);
+      margin-top: $margin-l;
+      &-wrapper {
+        @include d-flex(center, center, column);
+        & img {
+          width: 200px;
+        }
+        .sub-photo {
+          @include d-flex(center, center, column);
+        }
+        .photo {
+          width: 60px;
+        }
+      }
+      &-information {
+        @include d-flex(center, center, column);
+      }
+      .title {
+        & span {
+          font-size: 25px;
+        }
+      }
+      .stock {
+        padding: $padding-s;
+        width: 300px;
+        @include d-flex(space-between, center);
+        & span {
+          color: green;
+        }
+      }
+      .price {
+        @include d-flex(center, center, column);
+        padding: $padding-s;
+
+        & span {
+          font-size: 30px;
+          padding: $padding-s;
+          font-weight: 900;
+        }
+        & button {
+          font-size: $fs-xs;
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .description {
+        @include d-flex(none, none, column);
+        width: 250px;
+        & img {
+          width: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-item {
+    &_box {
+      border-style: ridge;
+      &-wrapper {
+        & img {
+          width: 250px;
+        }
+        .photo {
+          width: 70px;
+        }
+      }
+      .title {
+        & span {
+          font-size: 35px;
+        }
+      }
+      .price {
+        & span {
+          font-size: 35px;
+        }
+        & button {
+          width: 50px;
+          height: 50px;
+          font-size: $fs-xs;
+        }
+      }
+    }
+  }
+}

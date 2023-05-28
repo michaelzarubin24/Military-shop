@@ -1,5 +1,9 @@
 @import "../../scss/mixings.scss";
 @import "../../scss/variables.scss";
+@font-face {
+  font-family: "Amazing Grotesk Ultra";
+  src: url(../../public/fonts/AmazingGrotesk/Amazing\ Grotesk\ Ultra.otf);
+}
 
 * {
   padding: 0;
@@ -41,6 +45,7 @@ a {
     text-align: center;
     width: 150px;
     height: 192px;
+    font-family: $ff-primary;
     & img {
       width: 150px;
     }
@@ -57,6 +62,7 @@ a {
   @include d-flex(center, center);
   margin: $margin-xxl;
   &_box {
+    font-family: $ff-primary;
     width: 900px;
     border: 15px solid;
     border-style: ridge;
@@ -85,7 +91,7 @@ a {
     }
     .title {
       & span {
-        font-size: $fs-l;
+        font-size: 40px;
       }
     }
     .stock {
@@ -136,3 +142,4 @@ a {
     }
   }
 }
+@import "../../pages/product/media.scss";
