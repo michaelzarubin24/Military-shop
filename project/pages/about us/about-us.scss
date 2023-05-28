@@ -1,21 +1,209 @@
 @import "../../scss/variables.scss";
+@import "../../scss/mixings.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background: rgb(33, 31, 31);
-}
-
-.title {
-  color: $forth-text-color;
-
-  &__paragraph {
-      font-size: $fs-xs;
-  }
-
-
-}
-
-h1 {
-  font-size: $fs-xl;
+  background: $secondary-bg;
 }
 
   
+.header {
+  @include d-flex(space-between, center, row);
+  background: $primary-bg;
+  margin-bottom: $margin-m;
+  &__title-wrapper {
+    @include d-flex(space-between, center, row);
+  }
+  &__title {
+    @include d-flex(space-between, center, column);
+    font-size: $fs-l;
+    margin: $margin-s;
+    text-align: center;
+    margin-left: $margin-xl;
+    color: #000000;
+    font-weight: 600;
+  }
+  &__logo-wrapper {
+    margin: $margin-s;
+    margin-left: $margin-l;
+  }
+  &__logo {
+    width: 120px;
+    height: 111px;
+  }
+  &__nav {
+    @include d-flex(space-between, center, row);
+    font-size: $fs-m;
+    .nav-link {
+      @include d-flex(space-between, center, row);
+      margin: $margin-m;
+      color: $primary-text-color;
+      font-weight: 600;
+      text-shadow: 2px 2px #000000;
+    }
+  }
+  &__search-wrapper {
+    margin-right: $margin-m;
+  }
+  &__search {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.about-us_title{
+  @include d-flex(center, center, row);
+  margin-bottom: $margin-m;
+}
+
+.star{
+  width: 50px;
+  height: 50px;
+  margin: 0px $margin-xs;
+}
+
+.about_title{
+  @include d-flex(center, center, row);
+  font-family: $ff-secondary;
+  font-size: $fs-l;
+  font-weight: 600;
+  color: darkslategray;
+}
+
+.about-us_par{
+  @include d-flex(space-between, center, row);
+  margin-bottom: $margin-m;
+}
+
+.about-us_img-warpper_par{
+  width: 30%;
+}
+
+.txt_par{
+  width: 70%;
+  color: grey;
+}
+
+.par{
+  width: 1000px;
+}
+
+.comand{
+  margin-bottom: $margin-m;
+
+  &_title{
+    width: 100%;
+    @include d-flex(center, center, row);
+    font-family: $ff-secondary;
+    font-size: $fs-l;
+    font-weight: 600;
+    color: darkslategray;
+    margin-bottom: $margin-m;
+  }
+}
+
+.comand_people{
+  @include d-flex(space-between, center, row);
+  padding: 30px 100px;
+
+  &-joiner1, &-joiner2, &-joiner3{
+    width: 250px;
+    height: 250px;
+    border: 8px solid darkmagenta;
+    border-radius: 50px;
+    background-image: url(../../public/images/kir.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-bottom: $margin-s;
+  }
+
+  &-par{
+    font-size: $fs-l;
+    font-weight: 600;
+    @include d-flex(center, center, row);
+  }
+
+  &-joiner2{
+    background-image: url(../../public/images/Dima.jpg);
+  }
+
+  &-joiner3{
+    background-image: url(../../public/images/Max.jpg);
+  }
+}
+
+.banner{
+  width: 100%;
+  height: 500px;
+  background-image: url(../../public/images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: $margin-xxl;
+  padding: $padding-xl 500px;
+
+  &_title{
+    @include d-flex(center, center, row);
+    color: aliceblue;
+    font-size: $fs-l;
+    font-weight: 700;
+    margin-bottom: $margin-s;
+  }
+
+  &_txt{
+    @include d-flex(center, center, row);
+    color: aliceblue;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.footer {
+  @include d-flex(space-between, flex-start, row);
+  background: $primary-bg;
+  &__title-wrapper {
+    @include d-flex(flex-start, center, row);
+  }
+  &__title {
+    @include d-flex(space-between, center, column);
+    font-size: $fs-l;
+    margin: $margin-s;
+    text-align: center;
+    margin-left: $margin-xl;
+  }
+  &__logo-wrapper {
+    margin: $margin-s;
+    margin-left: $margin-l;
+  }
+  &__logo {
+    width: 120px;
+    height: 111px;
+  }
+  &__nav {
+    @include d-flex(space-between, center, row);
+    font-size: $fs-m;
+    .nav-link {
+      @include d-flex(space-between, center, row);
+      margin: $margin-m;
+      color: $primary-text-color;
+      text-shadow: 2px 2px #000000;
+    }
+  }
+
+  &__socials-wrapper {
+    @include d-flex(space-between, center, column);
+    padding: $padding-m;
+    font-size: $fs-m;
+  }
+  &__socials {
+    margin-bottom: $margin-s;
+    color: $primary-text-color;
+    text-shadow: 2px 2px #000000;
+  }
+}
