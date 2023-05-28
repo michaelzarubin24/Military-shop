@@ -1,0 +1,29 @@
+*{
+    padding: 3px;
+    background: inherit;
+    font-size: 25px;
+    margin-left: 160px;
+}
+
+.logo_txt{
+    margin-left: -10px;
+}
+
+.registration{
+    width: 100px;
+    text-decoration:underline;
+    
+    
+}
+
+.btn{
+    
+    
+    padding: 10px;
+    background: rgb(142, 142, 120);
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+    margin-left: 360px;
+    margin-top: 30px;
+}
