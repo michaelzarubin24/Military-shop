@@ -1,18 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en,ua">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Information</title>
+    <title class="logo"></title>
 </head>
+
 <body>
     <div id="app">
-        <div class="title">
-            <h1>registration</h1>
-            <div class="title__paragraph">WORLD</div>
-        </div>
-    </div>
 
-    <script type="module" src="./registration.js"></script>
+    </div>
+    <header class="header">
+
+
+    </header>
+    <form class="guruweba_example_form" name="#" method="POST" action="#">
+        <div class="registration">Реєстрація</div>
+        <div class="info">Ім'я*</div>
+        <input type="text" name="name" required="required">
+        <div class="info">Призвище*</div>
+        <input type="text" name="namsurname" required="required">
+        <div class="info">Gmail*</div>
+        <input name="guruweba_example_gmail" type="gmail" />
+        <div  class="info">Пароль*</div>
+        <input name="guruweba_example_password" type="password" />
+        
+        <div class="info">Підтвердження пароля*</div>
+        <input name="guruweba_example_password" type="password" />
+        <div class="info">Телефон*</div>
+        <input name="guruweba_example_tel" type="tel" />
+        <div class="info">Дата реєстрації*</div>
+        <input name="guruweba_example_month" type="month" />
+        
+      </form>
+      <input class="btn" type="submit" name="submit_btn" value="Реєстація">
 </body>
 </html>
