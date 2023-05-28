@@ -1,21 +1,145 @@
+@import "../../scss/mixings.scss";
 @import "../../scss/variables.scss";
+@font-face {
+  font-family: "Amazing Grotesk Ultra";
+  src: url(../../public/fonts/AmazingGrotesk/Amazing\ Grotesk\ Ultra.otf);
+}
 
-// * pages-product 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-.title {
-  color: $forth-text-color;
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  &__paragraph {
-      font-size: $fs-xs;
+.product {
+  @include d-flex(center, center, column);
+  & span {
+    width: 500px;
+    border: 0px solid;
+    padding: $padding-xs;
+    font-size: $fs-l;
+    font-family: $ff-primary;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $secondary-bg;
+    color: $forth-text-color;
+    margin: $margin-l;
   }
-
-
+  &-container {
+    @include d-flex(space-around, center);
+    flex-wrap: wrap;
+    width: 750px;
+    height: 600px;
+    border: 15px solid;
+    border-style: ridge;
+    border-radius: 35px;
+  }
+  &-box {
+    @include d-flex(space-between, center, column);
+    text-align: center;
+    width: 150px;
+    height: 192px;
+    font-family: $ff-primary;
+    & img {
+      width: 150px;
+    }
+    & p {
+      font-weight: 900;
+    }
+    .text {
+      text-align: center;
+    }
+  }
 }
 
-h1 {
-  font-size: $fs-xl;
+.product-item {
+  @include d-flex(center, center);
+  margin: $margin-xxl;
+  &_box {
+    font-family: $ff-primary;
+    width: 900px;
+    border: 15px solid;
+    border-style: ridge;
+    border-radius: 35px;
+    padding: $padding-xl;
+    @include d-flex(space-around, flex-start);
+    margin-top: $margin-l;
+    &-wrapper {
+      @include d-flex(center, center, column);
+      & img {
+        width: 300px;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.2);
+          transition: 0.5s;
+        }
+      }
+
+      .photo {
+        margin: $margin-m;
+        width: 80px;
+      }
+    }
+    &-information {
+      @include d-flex(center, center, column);
+    }
+    .title {
+      & span {
+        font-size: 40px;
+      }
+    }
+    .stock {
+      padding: $padding-s;
+      width: 300px;
+      @include d-flex(space-between, center);
+      & span {
+        color: green;
+      }
+    }
+    .price {
+      @include d-flex(center, center, column);
+      padding: $padding-s;
+
+      & span {
+        font-size: $fs-l;
+        padding: $padding-s;
+        font-weight: 900;
+      }
+      & button {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: none;
+        background-color: $primary-bg;
+        transition: 0.7s;
+        &:hover {
+          background-color: red;
+          transition: 0.8s;
+          transform: scale(1.2);
+          color: greenyellow;
+        }
+      }
+    }
+    .description {
+      @include d-flex(none, none, column);
+      width: 350px;
+      & span {
+        margin: 20px;
+        border-bottom: 1px solid;
+        position: relative;
+      }
+      & img {
+        position: absolute;
+        width: 20px;
+        right: 0;
+      }
+    }
+  }
 }
-
-
- 
-
+@import "../../pages/product/media.scss";

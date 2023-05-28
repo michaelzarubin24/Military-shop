@@ -1,4 +1,5 @@
 @import "./scss/variables.scss";
+@import "./scss/mixings.scss";
 
 * {
   padding: 0;
@@ -11,29 +12,227 @@ a {
   color: inherit;
 }
 
-
 #app {
   font-family: $ff-primary;
 }
 
-
-
 // * main-page
 
 .header {
-  color: red;
-  font-size: 22px;
-  margin: 2rem 1rem;
-
+  @include d-flex(space-between, center, row);
+  background: $primary-bg;
+  &__title-wrapper {
+    @include d-flex(space-between, center, row);
+  }
+  &__title {
+    @include d-flex(space-between, center, column);
+    font-size: $fs-l;
+    margin: $margin-s;
+    text-align: center;
+    margin-left: $margin-xl;
+  }
+  &__logo-wrapper {
+    margin: $margin-s;
+    margin-left: $margin-l;
+  }
+  &__logo {
+    width: 120px;
+    height: 111px;
+  }
   &__nav {
-    display: flex;
-    flex-direction: column;
-    font-size: 22px;
-    margin-left: 1rem;
+    @include d-flex(space-between, center, row);
+    font-size: $fs-m;
+    .nav-link {
+      @include d-flex(space-between, center, row);
+      margin: $margin-m;
+      color: $primary-text-color;
+      text-shadow: 2px 2px #000000;
+    }
+  }
+  &__search-wrapper {
+    margin-right: $margin-m;
+  }
+  &__search {
+    width: 28px;
+    height: 28px;
   }
 }
 
+.location {
+  @include d-flex(space-between, center, row);
+  padding: $padding-xs;
+  background: $secondary-bg;
+  &__pin-wrapper {
+    margin-left: $margin-m;
+  }
+  &__pin {
+    width: 90px;
+    height: 75px;
+  }
 
+  &__cities-wrapper {
+    @include d-flex(start, center, column);
+    margin-right: $margin-xxxl;
+  }
+  .button__wrapper {
+    margin-right: $margin-xl;
+  }
+  .button {
+    font-family: $ff-primary;
+    font-size: $fs-m;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: $primary-bg;
+    transition: 0.7s;
+    &:hover {
+      background-color: red;
+      transition: 0.8s;
+      transform: scale(1.2);
+      color: greenyellow;
+    }
+  }
+}
 
+.main-banner {
+  .banner {
+    max-width: 100%;
+    height: 100%;
+  }
 
+  .title-wrapper {
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    left: 10%;
+    font-size: $fs-xl;
+    text-transform: uppercase;
+  }
+  &__title {
+    background-color: rgb(194, 185, 185, 0.1);
+    color: $third-text-color;
+  }
 
+  .subtitle-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: $margin-m;
+    position: relative;
+    bottom: 150px;
+    font-size: $fs-xl;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    background-color: rgb(194, 185, 185, 0.1);
+    color: $third-text-color;
+  }
+}
+
+.product {
+  @include d-flex(center, center, column);
+  & span {
+    width: 500px;
+    border: 0px solid;
+    padding: $padding-xs;
+    font-size: $fs-l;
+    font-family: $ff-primary;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $secondary-bg;
+    color: $forth-text-color;
+    margin: $margin-l;
+  }
+  &-container {
+    @include d-flex(space-around, center);
+    flex-wrap: wrap;
+    width: 926px;
+    height: 600px;
+    border: 15px solid;
+    border-style: ridge;
+    border-radius: 35px;
+  }
+  &-box {
+    @include d-flex(space-between, center, column);
+    text-align: center;
+    width: 150px;
+    height: 192px;
+    & img {
+      width: 150px;
+    }
+    & p {
+      font-weight: 900;
+    }
+    .text {
+      text-align: center;
+    }
+  }
+}
+
+.blog {
+  @include grid-sys(1, 2);
+  background: $primary-bg;
+  margin: $margin-m;
+  &__wrapper {
+    @include d-flex(space-between, flex-start, row);
+    margin: $margin-m;
+  }
+  &__description-wrapper {
+    padding-left: $padding-xs;
+    @include d-flex(space-between, flex-end, column);
+  }
+  &__description {
+    font-size: $fs-xs;
+  }
+  &__description-link {
+    font-size: $fs-xs;
+    margin-top: $margin-s;
+    color: $primary-text-color;
+    text-shadow: 2px 2px #000000;
+  }
+}
+
+.footer {
+  @include d-flex(space-between, flex-start, row);
+  background: $primary-bg;
+  &__title-wrapper {
+    @include d-flex(flex-start, center, row);
+  }
+  &__title {
+    @include d-flex(space-between, center, column);
+    font-size: $fs-l;
+    margin: $margin-s;
+    text-align: center;
+    margin-left: $margin-xl;
+  }
+  &__logo-wrapper {
+    margin: $margin-s;
+    margin-left: $margin-l;
+  }
+  &__logo {
+    width: 120px;
+    height: 111px;
+  }
+  &__nav {
+    @include d-flex(space-between, center, row);
+    font-size: $fs-m;
+    .nav-link {
+      @include d-flex(space-between, center, row);
+      margin: $margin-m;
+      color: $primary-text-color;
+      text-shadow: 2px 2px #000000;
+    }
+  }
+
+  &__socials-wrapper {
+    @include d-flex(space-between, center, column);
+    padding: $padding-m;
+    font-size: $fs-m;
+  }
+  &__socials {
+    margin-bottom: $margin-s;
+    color: $primary-text-color;
+    text-shadow: 2px 2px #000000;
+  }
+}

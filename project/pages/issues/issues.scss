@@ -1,19 +1,144 @@
 @import "../../scss/variables.scss";
+@import "../../scss/mixings.scss";
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-.title {
-  color: $forth-text-color;
+#app {
+  font-family: $ff-primary;
+}
 
-  &__paragraph {
-      font-size: $fs-xs;
+// * Issues-pages
+
+.header {
+  @include d-flex(space-between, center, row);
+  background: $primary-bg;
+  border-radius: $br-header;
+  
+  &__title-wrapper {
+    @include d-flex(space-between, center, row);
+  }
+  &__title {
+    @include d-flex(space-between, center, column);
+    font-size: $fs-l;
+    margin: $margin-s;
+    text-align: center;
+    margin-left: $margin-xl;
+  }
+  &__logo-wrapper {
+    margin: $margin-s;
+    margin-left: $margin-l;
+  }
+  &__logo {
+    width: 120px;
+    height: 111px;
+  }
+  &__nav {
+    @include d-flex(space-between, center, row);
+    font-size: $fs-m;
+    .nav-link {
+      @include d-flex(space-between, center, row);
+      margin: $margin-m;
+      color: $primary-text-color;
+      text-shadow: 2px 2px #000000;
+    }
+  }
+  &__search-wrapper {
+    margin-right: $margin-m;
+  }
+  &__search {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.container {
+  display: flex;
+
+  .sidebar {
+    @include d-flex(start, center, column);
+    width: 25%;
+    background: $primary-bg;
+    padding: $padding-xs;
+    margin: $margin-xs;
+    border-radius: $br-sidebar;
+
+    &__nav {
+      cursor: pointer;
+      width: 80%;
+      padding: 1rem 2.9rem;
+      margin-top: $margin-xs;
+      color: $secondary-text-color;
+      // background: inherit;
+      text-align: center;
+      font-size: $fs-m;
+      border-radius: $br-nav;
+      border-bottom: 1px solid $third-text-color;
+      transition: ease 1400ms;
+  
+      &:hover {
+        background: #588b97;
+        margin-top: $margin-xs;
+        color: $third-text-color;
+        font-size: $fs-m;
+        text-align: center;
+        box-shadow: $box-shadow-s;
+      }
+    }
   }
 
+  .main {
+    width: 70%;
+    height: 73vh;
+    @include d-flex(center, center, column);
 
+    &__title {
+      @include d-flex(center, center);
+      margin-top: $margin-m;
+      text-transform: uppercase;
+      font-size: $fs-l;
+    }
+
+    &__description {
+      width: 90%;
+      padding: $padding-m $padding-s;
+    }
+
+    #main__description {
+      padding: $padding-m $padding-s; 
+      width: 90%; 
+      display: none; 
+    }
+  
+    #main__description .new { opacity: 0; }
+    #main__description .div_opacity {
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    opacity: 1;
+    }
+  }
 }
 
-h1 {
-  font-size: $fs-xl;
+
+
+//* Fouter
+
+.footer {
+  @include d-flex(center, center);
+  background: $primary-bg;
+  text-align: center;
+  padding: $padding-s;
+  border-radius: $br-footer;
 }
-
-
+  
