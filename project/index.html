@@ -1,40 +1,224 @@
 <!DOCTYPE html>
-<html lang="en,ua">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Information</title>
-    <title class="logo"></title>
-</head>
-
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Military shop</title>
+  </head>
+  <body>
     <div id="app">
+      <header class="header">
+        <div class="header__title-wrapper">
+          <div class="header__logo-wrapper">
+            <img src="./icons/tank.png" alt="Error" class="header__logo" />
+          </div>
+          <div class="header__title">MILITARY SHOP</div>
+        </div>
+        <nav class="header__nav">
+          <a href="./pages/about us/about-us.html" class="nav-link">About us</a>
+          <a href="./pages/issues/issues.html" class="nav-link">Issues</a>
+          <a href="./pages/login/login.html" class="nav-link">Login</a>
+          <a href="./pages/product/product.html" class="nav-link">Product</a>
+          <a href="./pages/registration/registration.html" class="nav-link"
+            >Registration</a
+          >
+          <a href="./pages/sales/sales.html" class="nav-link">Sales</a>
+        </nav>
+        <div class="header__search-wrapper">
+          <img src="./icons/search.png" alt="Error" class="header__search" />
+        </div>
+      </header>
+      <section class="location">
+        <div class="location__pin-wrapper">
+          <img src="./icons/redpin.png" alt="Error" class="location__pin" />
+        </div>
+        <div class="location__cities-wrapper">
+          <p class="location__cities">Dnipro</p>
+          <p class="location__cities">Kyiv</p>
+          <p class="location__cities">Kharkiv</p>
+          <p class="location__cities">Lviv</p>
+        </div>
+        <div class="location__cities-wrapper">
+          <p class="location__cities">Poltava</p>
+          <p class="location__cities">Odessa</p>
+          <p class="location__cities">Zaporizhzhia</p>
+          <p class="location__cities">Mykolaiv</p>
+        </div>
+        <div class="location__cities-wrapper">
+          <p class="location__cities">Sumy</p>
+          <p class="location__cities">Kherson</p>
+          <p class="location__cities">Vinnitsa</p>
+          <p class="location__cities">Chernivtsi</p>
+        </div>
+        <div class="location__cities-wrapper">
+          <p class="location__cities">Rivne</p>
+          <p class="location__cities">Zhytomir</p>
+          <p class="location__cities">Ivano-Frankivsk</p>
+          <p class="location__cities">Uzhgorod</p>
+        </div>
+        <div class="button__wrapper">
+          <button class="button">DONATE</button>
+        </div>
+      </section>
 
+      <section class="main-banner">
+        <figure class="main-banner-wrapper">
+          <img src="./images/main-img.png" alt="+" class="banner" />
+          <div class="title-wrapper">
+            <figcaption class="main-banner__title">MILITARY SHOP</figcaption>
+          </div>
+          <div class="subtitle-wrapper">
+            <figcaption class="main-banner__subtitle">
+              BEST EQUIPMENT
+            </figcaption>
+          </div>
+        </figure>
+      </section>
+      <section class="product">
+        <span>product</span>
+        <div class="product-container">
+          <div class="product-box">
+            <a href="./product-shirts.html"
+              ><img src="../../images/shirt.png" alt=""
+            /></a>
+            <p>T-Shirts</p>
+          </div>
+          <div class="product-box">
+            <a href="./product-gloves.html"
+              ><img src="../../images/glove.png" alt=""
+            /></a>
+            <p>Gloves</p>
+          </div>
+          <div class="product-box">
+            <a href="./product-optics.html"
+              ><img src="../../images/optics.png" alt=""
+            /></a>
+            <p>Optics</p>
+          </div>
+          <div class="product-box">
+            <a href="./product-armor.html"
+              ><img src="../../images/bodyarmor.png" alt=""
+            /></a>
+            <p>Body Armor</p>
+          </div>
+          <div class="product-box">
+            <a href="./product-hats.html"
+              ><img src="../../images/hat.png" alt=""
+            /></a>
+            <p>Hats</p>
+          </div>
+          <div class="product-box">
+            <a href="./product-bags.html"
+              ><img src="../../images/bag.png" alt=""
+            /></a>
+            <p>Bags</p>
+          </div>
+          <div class="product-box">
+            <a href="./product-boots.html"
+              ><img src="../../images/boots.png" alt=""
+            /></a>
+            <p>Boots</p>
+          </div>
+          <div class="product-box">
+            <a href="./product-rifle.html"
+              ><img src="../../images/rifle.png" alt=""
+            /></a>
+            <p>Rifles</p>
+          </div>
+        </div>
+        <span>blog</span>
+      </section>
+      <section class="blog">
+        <div class="blog__wrapper">
+          <div class="blog__image-wrapper">
+            <img src="./images/blog1.png" alt="+" class="blog__image" />
+          </div>
+          <div class="blog__description-wrapper">
+            <p class="blog__description">
+              Медичний підсумок є обов'язковим елементом спорядження кожного
+              бійця та стане незамінним при наданні першої домедичної допомоги.
+            </p>
+            <p class="blog__description-link">Читати повністю</p>
+          </div>
+        </div>
+        <div class="blog__wrapper">
+          <div class="blog__image-wrapper">
+            <img src="./images/blog2.png" alt="+" class="blog__image" />
+          </div>
+          <div class="blog__description-wrapper">
+            <p class="blog__description">
+              Бренд М-Тас постійно оновлює асортимент сумок для повсякденного
+              використання військовослужбовцями, поліцейськими, працівниками
+              силових структур та всіма поціновувачами тактики.
+            </p>
+            <p class="blog__description-link">Читати повністю</p>
+          </div>
+        </div>
+        <div class="blog__wrapper">
+          <div class="blog__image-wrapper">
+            <img src="./images/blog3.jpg" alt="+" class="blog__image" />
+          </div>
+          <div class="blog__description-wrapper">
+            <p class="blog__description">
+              Бренд М-Тас розробляє та випускає широкий асортимент продукції
+              Military, приділяючи найбільше уваги військовим і співробітникам
+              правоохоронних структур, спираючись на їх досвід. Сучасні
+              матеріали та технології виробництва, зручний крій та висока якість
+              виробів – ось ті фактори, які виділяють продукцію бренду М-Тас
+              серед лідерів галузі тактичного одягу і спорядження, забезпечуючи
+              їй високу прихильність військових.
+            </p>
+            <p class="blog__description-link">Читати повністю</p>
+          </div>
+        </div>
+        <div class="blog__wrapper">
+          <div class="blog__image-wrapper">
+            <img src="./images/blog4.jpg" alt="+" class="blog__image" />
+          </div>
+          <div class="blog__description-wrapper">
+            <p class="blog__description">
+              Плитоноска є невід’ємним елементом спорядження кожного, хто
+              виконує свій обов’язок в зоні ведення бойових дій. Вона повинна
+              бути зносостійкою, адаптованою до кріплення сучасного спорядження
+              та правильно розподіляти навантаження плит. Саме тому варто
+              ретельно підійти до вибору плитоноски, враховуючи всі критерії, що
+              можуть вплинути на ефективність бійця.
+            </p>
+            <p class="blog__description-link">Читати повністю</p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__section">
+          <div class="footer__title-wrapper">
+            <div class="footer__logo-wrapper">
+              <img src="./icons/tank.png" alt="Error" class="footer__logo" />
+            </div>
+            <div class="footer__title">MILITARY SHOP</div>
+          </div>
+          <nav class="footer__nav">
+            <a href="./pages/about us/about-us.html" class="nav-link"
+              >About us</a
+            >
+            <a href="./pages/issues/issues.html" class="nav-link">Issues</a>
+            <a href="./pages/login/login.html" class="nav-link">Login</a>
+            <a href="./pages/product/product.html" class="nav-link">Product</a>
+            <a href="./pages/registration/registration.html" class="nav-link"
+              >Registration</a
+            >
+            <a href="./pages/sales/sales.html" class="nav-link">Sales</a>
+          </nav>
+        </div>
+
+        <div class="footer__socials-wrapper">
+          <a href="" class="footer__socials">Twitter</a
+          ><a href="" class="footer__socials">Telegram</a
+          ><a href="" class="footer__socials">YouTube</a
+          ><a href="" class="footer__socials">Instagram</a
+          ><a href="" class="footer__socials">TikTok</a>
+        </div>
+      </footer>
     </div>
-    <header class="header">
-
-
-    </header>
-    <form class="guruweba_example_form" name="#" method="POST" action="#">
-        <div class="registration">Реєстрація</div>
-        <div class="info">Ім'я*</div>
-        <input type="text" name="name" required="required">
-        <div class="info">Призвище*</div>
-        <input type="text" name="namsurname" required="required">
-        <div class="info">Gmail*</div>
-        <input name="guruweba_example_gmail" type="gmail" />
-        <div  class="info">Пароль*</div>
-        <input name="guruweba_example_password" type="password" />
-        
-        <div class="info">Підтвердження пароля*</div>
-        <input name="guruweba_example_password" type="password" />
-        <div class="info">Телефон*</div>
-        <input name="guruweba_example_tel" type="tel" />
-        <div class="info">Дата реєстрації*</div>
-        <input name="guruweba_example_month" type="month" />
-        
-      </form>
-      <input class="btn" type="submit" name="submit_btn" value="Реєстація">
-</body>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
