@@ -1,0 +1,614 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixings.scss";
+
+@media (min-width: 320px) and (max-width: 576px) {
+    body {
+        background: $secondary-bg;
+      }
+      
+        
+      .header {
+        @include d-flex(space-between, center, row);
+        background: $primary-bg;
+        margin-bottom: $margin-m;
+        padding: $padding-xs $padding-s;
+
+        &__title {
+          @include d-flex(space-between, center, column);
+          font-size: $fs-m;
+          text-align: center;
+          margin: 0;
+          color: #000000;
+          font-weight: 600;
+        }
+        &__logo-wrapper {
+            margin: 0;
+        }
+        &__logo {
+          width: 50px;
+          height: 51px;
+        }
+
+        &__nav {
+            display: none;
+        }
+        
+        &__search-wrapper {
+            margin: 0;
+        }
+
+        &__search {
+          width: 28px;
+          height: 28px;
+        }
+      }
+      
+      .about-us_title{
+        @include d-flex(center, center, row);
+        margin-bottom: $margin-m;
+      }
+      
+      .star{
+        width: 25px;
+        height: 25px;
+        margin: 0px $margin-xs;
+      }
+      
+      .about_title{
+        @include d-flex(center, center, row);
+        font-family: $ff-secondary;
+        font-size: 30px;
+        font-weight: 600;
+        color: darkslategray;
+      }
+      
+      .about-us_par{
+        @include d-flex(space-between, center, row);
+        margin-bottom: $margin-m;
+      }
+      
+      .about-us_img-warpper_par{
+        width: 30%;
+      }
+
+      .gun{
+        width: 150px;
+        height: 200px;
+      }
+
+      .max576, .max1200{
+        display: none;
+      }
+      
+      .txt_par{
+        width: 50%;
+        color: grey;
+      }
+      
+      .par{
+        width: 150px;
+      }
+      
+      .comand{
+        margin-bottom: $margin-m;
+      
+        &_title{
+          width: 100%;
+          @include d-flex(center, center, row);
+          font-family: $ff-secondary;
+          font-size: 30px;
+          font-weight: 600;
+          color: darkslategray;
+          margin-bottom: $margin-xs;
+        }
+      }
+      
+      .comand_people{
+        @include d-flex(space-between, center, row);
+        padding: 0px 5px;
+      
+        &-joiner1, &-joiner2, &-joiner3{
+          width: 100px;
+          height: 100px;
+          border: 8px solid darkmagenta;
+          border-radius: 50px;
+          background-image: url(../../public/images/kir.jpg);
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center;
+          margin-bottom: $margin-s;
+        }
+      
+        &-par{
+          font-size: $fs-m;
+          font-weight: 600;
+          @include d-flex(center, center, row);
+        }
+      
+        &-joiner2{
+          background-image: url(../../public/images/Dima.jpg);
+        }
+      
+        &-joiner3{
+          background-image: url(../../public/images/Max.jpg);
+        }
+      }
+      
+      .banner{
+        height: 100%;
+        background-image: url(../../public/images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: $margin-xxl;
+        padding: $padding-s 50px;
+      
+        &_title{
+          @include d-flex(center, center, row);
+          color: aliceblue;
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: $margin-s;
+        }
+      
+        &_txt{
+          @include d-flex(center, center, row);
+          color: aliceblue;
+          line-height: 30px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+      
+      .footer {
+        @include d-flex(space-between, center, row);
+        background: $primary-bg;
+        padding: 10px;
+
+        &__section{
+            @include d-flex(space-between, center, row);
+            width: 60%;
+        }
+
+        &__title {
+            @include d-flex(space-between, center, column);
+            font-size: $fs-m;
+            text-align: center;
+            margin: 0;
+            color: #000000;
+            font-weight: 600;
+          }
+          &__logo-wrapper {
+            margin: 0;
+              margin-right: 10px;
+          }
+          &__logo {
+            width: 50px;
+            height: 51px;
+          }
+        &__nav {
+            display: none;
+        }
+      
+        &__socials-wrapper {
+          @include d-flex(space-between, center, column);
+          padding: 0px;
+          font-size: $fs-m;
+        }
+        &__socials {
+          margin-bottom: $margin-s;
+          color: $primary-text-color;
+          text-shadow: 2px 2px #000000;
+        }
+      }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    body {
+        background: $secondary-bg;
+      }
+      
+        
+      .header {
+        @include d-flex(space-between, center, row);
+        background: $primary-bg;
+        margin-bottom: $margin-m;
+        padding: $padding-xs $padding-s;
+
+        &__title {
+          @include d-flex(space-between, center, column);
+          font-size: 30px;
+          text-align: center;
+          margin: 0;
+          color: #000000;
+          font-weight: 600;
+        }
+        &__logo-wrapper {
+            margin: 0;
+        }
+        &__logo {
+          width: 70px;
+          height: 71px;
+        }
+
+        &__nav {
+            display: none;
+        }
+        
+        &__search-wrapper {
+            margin: 0;
+        }
+
+        &__search {
+          width: 28px;
+          height: 28px;
+        }
+      }
+      
+      .about-us_title{
+        @include d-flex(center, center, row);
+        margin-bottom: $margin-m;
+      }
+      
+      .star{
+        width: 40px;
+        height: 40px;
+        margin: 0px $margin-xs;
+      }
+      
+      .about_title{
+        @include d-flex(center, center, row);
+        font-family: $ff-secondary;
+        font-size: $fs-l;
+        font-weight: 600;
+        color: darkslategray;
+      }
+      
+      .about-us_par{
+        @include d-flex(space-between, center, row);
+        margin-bottom: $margin-m;
+      }
+      
+      .about-us_img-warpper_par{
+        width: 30%;
+      }
+
+      .gun{
+        width: 250px;
+        height: 300px;
+      }
+
+      .max576, .max1200{
+        display: none;
+      }
+      
+      .txt_par{
+        width: 50%;
+        color: grey;
+      }
+      
+      .par{
+        width: 200px;
+      }
+      
+      .comand{
+        margin-bottom: $margin-m;
+      
+        &_title{
+          width: 100%;
+          @include d-flex(center, center, row);
+          font-family: $ff-secondary;
+          font-size: $fs-l;
+          font-weight: 600;
+          color: darkslategray;
+          margin-bottom: $margin-l;
+        }
+      }
+      
+      .comand_people{
+        @include d-flex(space-between, center, row);
+        padding: 0px 5px;
+      
+        &-joiner1, &-joiner2, &-joiner3{
+          width: 150px;
+          height: 150px;
+          border: 8px solid darkmagenta;
+          border-radius: 50px;
+          background-image: url(../../public/images/kir.jpg);
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center;
+          margin-bottom: $margin-s;
+        }
+      
+        &-par{
+          font-size: 30px;
+          font-weight: 600;
+          @include d-flex(center, center, row);
+        }
+      
+        &-joiner2{
+          background-image: url(../../public/images/Dima.jpg);
+        }
+      
+        &-joiner3{
+          background-image: url(../../public/images/Max.jpg);
+        }
+      }
+      
+      .banner{
+        width: auto;
+        height: 100%;
+        background-image: url(../../public/images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: $margin-xxl;
+        padding: $padding-s 50px;
+      
+        &_title{
+          @include d-flex(center, center, row);
+          color: aliceblue;
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: $margin-s;
+        }
+      
+        &_txt{
+          @include d-flex(center, center, row);
+          color: aliceblue;
+          line-height: 30px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+      
+      .footer {
+        @include d-flex(space-between, center, row);
+        background: $primary-bg;
+        padding: 10px;
+
+        &__section{
+            @include d-flex(space-between, center, row);
+        }
+
+        &__title {
+            @include d-flex(space-between, center, column);
+            font-size: $fs-l;
+            text-align: center;
+            margin: 0;
+            color: #000000;
+            font-weight: 600;
+          }
+          &__logo-wrapper {
+            margin: 0;
+              margin-right: 50px;
+            }
+
+           &__logo {
+             width: 100px;
+             height: 101px;
+           }
+   
+           &__nav {
+               display: none;
+           }
+           
+           &__search-wrapper {
+               margin: 0;
+           }
+   
+           &__search {
+             width: 28px;
+             height: 28px;
+           }
+      }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    body {
+        background: $secondary-bg;
+      }
+      
+        
+      .header {
+        @include d-flex(space-between, center, row);
+        background: $primary-bg;
+        margin-bottom: $margin-m;
+        padding: $padding-xs $padding-s;
+
+        &__title {
+          @include d-flex(space-between, center, column);
+          font-size: 30px;
+          text-align: center;
+          margin: 0;
+          color: #000000;
+          font-weight: 600;
+        }
+        &__logo-wrapper {
+            margin: 0;
+        }
+        &__logo {
+          width: 70px;
+          height: 71px;
+        }
+
+        &__nav {
+            display: contents;
+
+            .nav-link {
+                @include d-flex(space-between, center, row);
+                margin: $margin-xs;
+                color: $primary-text-color;
+                font-weight: 600;
+                font-size: $fs-s;
+                text-shadow: 2px 2px #000000;
+            }
+        }
+        
+        &__search-wrapper {
+            margin: 0;
+        }
+
+        &__search {
+          width: 28px;
+          height: 28px;
+        }
+      }
+      
+      .about-us_title{
+        @include d-flex(center, center, row);
+        margin-bottom: $margin-m;
+      }
+      
+      .star{
+        width: 40px;
+        height: 40px;
+        margin: 0px $margin-xs;
+      }
+      
+      .about_title{
+        @include d-flex(center, center, row);
+        font-family: $ff-secondary;
+        font-size: $fs-l;
+        font-weight: 600;
+        color: darkslategray;
+      }
+      
+      .about-us_par{
+        @include d-flex(space-between, center, row);
+        margin-bottom: $margin-m;
+      }
+      
+      .about-us_img-warpper_par{
+        width: 30%;
+      }
+
+      .gun{
+        width: 350px;
+        height: 500px;
+      }
+
+      .max1200{
+        display: contents;
+      }
+      
+      .txt_par{
+        width: 50%;
+        color: grey;
+      }
+      
+      .par{
+        width: 380px;
+      }
+      
+      .comand{
+        margin-bottom: $margin-m;
+      
+        &_title{
+          width: 100%;
+          @include d-flex(center, center, row);
+          font-family: $ff-secondary;
+          font-size: $fs-l;
+          font-weight: 600;
+          color: darkslategray;
+          margin-bottom: $margin-l;
+        }
+      }
+      
+      .comand_people{
+        @include d-flex(space-between, center, row);
+        padding: 0px 30px;
+      
+        &-joiner1, &-joiner2, &-joiner3{
+          width: 180px;
+          height: 180px;
+          border: 8px solid darkmagenta;
+          border-radius: 50px;
+          background-image: url(../../public/images/kir.jpg);
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center;
+          margin-bottom: $margin-s;
+        }
+      
+        &-par{
+          font-size: 30px;
+          font-weight: 600;
+          @include d-flex(center, center, row);
+        }
+      
+        &-joiner2{
+          background-image: url(../../public/images/Dima.jpg);
+        }
+      
+        &-joiner3{
+          background-image: url(../../public/images/Max.jpg);
+        }
+      }
+      
+      .banner{
+        width: auto;
+        height: 100%;
+        background-image: url(../../public/images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: $margin-xxl;
+        padding: $padding-s 50px;
+      
+        &_title{
+          @include d-flex(center, center, row);
+          color: aliceblue;
+          font-size: $fs-l;
+          font-weight: 700;
+          margin-bottom: $margin-s;
+        }
+      
+        &_txt{
+          @include d-flex(center, center, row);
+          color: aliceblue;
+          line-height: 30px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+      
+      .footer {
+        @include d-flex(space-between, center, row);
+        background: $primary-bg;
+        padding: 10px;
+
+        &__section{
+            @include d-flex(space-between, center, row);
+        }
+
+        &__title {
+            @include d-flex(space-between, center, column);
+            font-size: $fs-l;
+            text-align: center;
+            margin: 0;
+            color: #000000;
+            font-weight: 600;
+          }
+          &__logo-wrapper {
+            margin: 0;
+              margin-right: 50px;
+            }
+
+           &__logo {
+             width: 100px;
+             height: 101px;
+           }
+   
+           &__nav {
+            display: none;
+           }
+           
+           &__search-wrapper {
+               margin: 0;
+           }
+   
+           &__search {
+             width: 28px;
+             height: 28px;
+           }
+      }
+}
