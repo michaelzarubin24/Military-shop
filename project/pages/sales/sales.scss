@@ -1,16 +1,122 @@
-@import "../../scss/variables.scss";
+@import './scss/variables.scss';
+@import './scss/mixings.scss';
 
-.title {
-    color: $forth-text-color;
-  
-    &__paragraph {
-        font-size: $fs-xs;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#app {
+  font-family: $ff-primary;
+}
+
+// * main-page
+
+.header {
+  @include d-flex(space-between, center, row);
+  background: $primary-bg;
+  &__title-wrapper {
+    @include d-flex(space-between, center, row);
+  }
+  &__title {
+    @include d-flex(space-between, center, column);
+    font-size: $fs-l;
+    margin: $margin-s;
+    text-align: center;
+    margin-left: $margin-xl;
+  }
+  &__logo-wrapper {
+    margin: $margin-s;
+    margin-left: $margin-l;
+  }
+  &__logo {
+    width: 120px;
+    height: 111px;
+  }
+  &__nav {
+    @include d-flex(space-between, center, row);
+    font-size: $fs-m;
+    .nav-link {
+      @include d-flex(space-between, center, row);
+      margin: $margin-m;
+      color: $primary-text-color;
+      text-shadow: 2px 2px #000000;
     }
-  
-  
   }
-  
-  h1 {
-    font-size: $fs-xl;
+  &__search-wrapper {
+    margin-right: $margin-m;
+  }
+  &__search {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.main {
+  &__product-card-wrapper {
+    @include grid-sys(1, 3);
+    margin-top: $margin-xxl;
+    margin-left: $margin-m;
+    margin-right: $margin-m;
+    gap: 4rem;
+    border: 15px solid;
+    border-style: ridge;
+    border-radius: 35px;
   }
 
+  &__product-card {
+    margin-left: $margin-xxxl;
+    line-height: 2rem;
+  }
+  &__card-img {
+    width: 200px;
+    margin-top: $margin-m;
+  }
+
+  &__product-description {
+    word-wrap: break-word;
+    width: 40%;
+  }
+
+  &__product-price {
+    text-decoration: line-through;
+  }
+
+  &__product-price-sales {
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+  }
+
+  &__product-btn {
+    position: relative;
+    left: 10rem;
+    top: -4rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: $primary-bg;
+    transition: 0.7s;
+    &:hover {
+      background-color: red;
+      transition: 0.8s;
+      transform: scale(1.2);
+      color: greenyellow;
+    }
+  }
+}
+
+.footer {
+  @include d-flex(center, center);
+  margin-top: $margin-xxl;
+  background: $primary-bg;
+  text-align: center;
+  padding: $padding-s;
+  border-radius: $br-footer;
+}
