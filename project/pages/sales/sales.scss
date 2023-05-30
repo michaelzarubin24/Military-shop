@@ -113,10 +113,45 @@ a {
 }
 
 .footer {
-  @include d-flex(center, center);
-  margin-top: $margin-xxl;
+  @include d-flex(space-between, flex-start, row);
   background: $primary-bg;
-  text-align: center;
-  padding: $padding-s;
-  border-radius: $br-footer;
+  &__title-wrapper {
+    @include d-flex(flex-start, center, row);
+  }
+  &__title {
+    @include d-flex(space-between, center, column);
+    font-size: $fs-l;
+    margin: $margin-s;
+    text-align: center;
+    margin-left: $margin-xl;
+  }
+  &__logo-wrapper {
+    margin: $margin-s;
+    margin-left: $margin-l;
+  }
+  &__logo {
+    width: 120px;
+    height: 111px;
+  }
+  &__nav {
+    @include d-flex(space-between, center, row);
+    font-size: $fs-m;
+    .nav-link {
+      @include d-flex(space-between, center, row);
+      margin: $margin-m;
+      color: $primary-text-color;
+      text-shadow: 2px 2px #000000;
+    }
+  }
+
+  &__socials-wrapper {
+    @include d-flex(space-between, center, column);
+    padding: $padding-m;
+    font-size: $fs-m;
+  }
+  &__socials {
+    margin-bottom: $margin-s;
+    color: $primary-text-color;
+    text-shadow: 2px 2px #000000;
+  }
 }
