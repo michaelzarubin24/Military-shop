@@ -1,0 +1,63 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixings.scss';
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .header,
+  .footer {
+    @include d-flex(space-between, center, column);
+    width: 100%;
+    background: $primary-bg;
+    &__title-wrapper {
+      @include d-flex(space-between, center, column);
+    }
+    &__title {
+      @include d-flex(space-between, center, column);
+      font-size: $fs-l;
+      margin: $margin-s;
+      text-align: center;
+      margin-left: $margin-xl;
+    }
+    &__logo-wrapper {
+      margin: $margin-s;
+      margin-left: $margin-l;
+      display: none;
+    }
+
+    &__nav {
+      @include d-flex(space-between, center, column);
+      font-size: $fs-s;
+      .nav-link {
+        @include d-flex(space-between, center, column);
+        margin: $margin-xs;
+        color: $primary-text-color;
+        text-shadow: 2px 2px #000000;
+      }
+    }
+    &__search-wrapper {
+      margin-right: $margin-m;
+      display: none;
+    }
+    &__search {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  .main {
+    &__product-card-wrapper {
+      @include grid-sys(1, 1);
+      margin-top: $margin-l;
+      margin-left: $margin-xxl;
+      margin-right: $margin-s;
+      margin-bottom: $margin-m;
+      gap: 1rem;
+      border: 15px solid;
+      border-style: ridge;
+      border-radius: 35px;
+      width: 80%;
+    }
+    &__product-description {
+      width: 75%;
+    }
+  }
+}

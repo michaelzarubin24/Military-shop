@@ -1,5 +1,6 @@
 @import './scss/variables.scss';
 @import './scss/mixings.scss';
+@import '../sales/media.scss';
 
 * {
   padding: 0;
@@ -21,6 +22,8 @@ a {
 .header {
   @include d-flex(space-between, center, row);
   background: $primary-bg;
+  width: 100%;
+
   &__title-wrapper {
     @include d-flex(space-between, center, row);
   }
@@ -75,7 +78,7 @@ a {
     line-height: 2rem;
   }
   &__card-img {
-    width: 200px;
+    width: 70%;
     margin-top: $margin-m;
   }
 
