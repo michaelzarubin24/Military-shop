@@ -67,6 +67,7 @@ a {
     margin-top: $margin-xxl;
     margin-left: $margin-m;
     margin-right: $margin-m;
+    margin-bottom: $margin-xxl;
     gap: 4rem;
     border: 15px solid;
     border-style: ridge;
@@ -78,13 +79,13 @@ a {
     line-height: 2rem;
   }
   &__card-img {
-    width: 70%;
+    width: 50%;
     margin-top: $margin-m;
   }
 
   &__product-description {
     word-wrap: break-word;
-    width: 40%;
+    width: 50%;
   }
 
   &__product-price {
