@@ -1,5 +1,5 @@
-@import './scss/variables.scss';
-@import './scss/mixings.scss';
+@import "./scss/variables.scss";
+@import "./scss/mixings.scss";
 
 * {
   padding: 0;
@@ -44,7 +44,7 @@ a {
     font-size: $fs-m;
     .nav-link {
       @include d-flex(space-between, center, row);
-      margin: $margin-m;
+      margin: $margin-xs;
       color: $primary-text-color;
       text-shadow: 2px 2px #000000;
     }
