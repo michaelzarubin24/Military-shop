@@ -1,5 +1,6 @@
 @import './scss/variables.scss';
 @import './scss/mixings.scss';
+@import '../sales/media.scss';
 
 * {
   padding: 0;
@@ -21,6 +22,8 @@ a {
 .header {
   @include d-flex(space-between, center, row);
   background: $primary-bg;
+  width: 100%;
+
   &__title-wrapper {
     @include d-flex(space-between, center, row);
   }
@@ -64,6 +67,7 @@ a {
     margin-top: $margin-xxl;
     margin-left: $margin-m;
     margin-right: $margin-m;
+    margin-bottom: $margin-xxl;
     gap: 4rem;
     border: 15px solid;
     border-style: ridge;
@@ -75,13 +79,13 @@ a {
     line-height: 2rem;
   }
   &__card-img {
-    width: 200px;
+    width: 50%;
     margin-top: $margin-m;
   }
 
   &__product-description {
     word-wrap: break-word;
-    width: 40%;
+    width: 50%;
   }
 
   &__product-price {
@@ -113,10 +117,45 @@ a {
 }
 
 .footer {
-  @include d-flex(center, center);
-  margin-top: $margin-xxl;
+  @include d-flex(space-between, flex-start, row);
   background: $primary-bg;
-  text-align: center;
-  padding: $padding-s;
-  border-radius: $br-footer;
+  &__title-wrapper {
+    @include d-flex(flex-start, center, row);
+  }
+  &__title {
+    @include d-flex(space-between, center, column);
+    font-size: $fs-l;
+    margin: $margin-s;
+    text-align: center;
+    margin-left: $margin-xl;
+  }
+  &__logo-wrapper {
+    margin: $margin-s;
+    margin-left: $margin-l;
+  }
+  &__logo {
+    width: 120px;
+    height: 111px;
+  }
+  &__nav {
+    @include d-flex(space-between, center, row);
+    font-size: $fs-m;
+    .nav-link {
+      @include d-flex(space-between, center, row);
+      margin: $margin-m;
+      color: $primary-text-color;
+      text-shadow: 2px 2px #000000;
+    }
+  }
+
+  &__socials-wrapper {
+    @include d-flex(space-between, center, column);
+    padding: $padding-m;
+    font-size: $fs-m;
+  }
+  &__socials {
+    margin-bottom: $margin-s;
+    color: $primary-text-color;
+    text-shadow: 2px 2px #000000;
+  }
 }
